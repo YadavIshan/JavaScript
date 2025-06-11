@@ -20,7 +20,8 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent =
       'Congratulations !!! You Won . 🎉🍾';
     document.querySelector('body').style.backgroundColor = 'green';
-    document.querySelector('.number').style.width = '15rem';
+    document.querySelector('.number').style.width = '30rem';
+    document.querySelector('.number').innerHTML = secretValue;
 
     let highScore = Number(localStorage.getItem('highscore')) || 0;
     if (score > highScore) {
